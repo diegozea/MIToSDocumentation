@@ -31,7 +31,7 @@
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">MSA</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">MSA</span>
 </pre></div>
 
 </div>
@@ -90,7 +90,7 @@
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="c"># Truncate IJulia outputs at:</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># Truncate IJulia outputs at:</span>
 <span class="n">ENV</span><span class="p">[</span><span class="s">&quot;LINES&quot;</span><span class="p">]</span>   <span class="o">=</span> <span class="mi">15</span> 
 <span class="n">ENV</span><span class="p">[</span><span class="s">&quot;COLUMNS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
 </pre></div>
@@ -136,7 +136,7 @@ For example, reading with MIToS the full Stockholm MSA of the family PF07388 usi
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF07388/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF07388/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -202,7 +202,7 @@ For example, reading with MIToS the full Stockholm MSA of the family PF07388 usi
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF07388/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span> <span class="n">Matrix</span><span class="p">{</span><span class="n">Residue</span><span class="p">})</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF07388/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span> <span class="n">Matrix</span><span class="p">{</span><span class="n">Residue</span><span class="p">})</span>
 </pre></div>
 
 </div>
@@ -302,7 +302,7 @@ Given that lowercase characters and dots are converted to gaps, unaligned insert
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF01565/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span> <span class="n">checkalphabet</span><span class="o">=</span><span class="n">true</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF01565/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span> <span class="n">checkalphabet</span><span class="o">=</span><span class="n">true</span><span class="p">)</span>
 
 <span class="n">printmodifications</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
@@ -366,7 +366,7 @@ filtercolumns! : 698 columns have been deleted.
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF16996/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span> <span class="c"># reads a Stockholm MSA file</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF16996/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span> <span class="c"># reads a Stockholm MSA file</span>
 
 <span class="n">print</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">FASTA</span><span class="p">)</span> <span class="c"># prints msa in FASTA format</span>
 </pre></div>
@@ -419,7 +419,7 @@ KKDLFYKEVEGRMESLKRRPAEKEKTTRSEKINVTFNVIIGLVILLGVIFTLFRV
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">write</span><span class="p">(</span><span class="s">&quot;msa.gz&quot;</span><span class="p">,</span> <span class="n">msa</span><span class="p">,</span> <span class="n">FASTA</span><span class="p">)</span> <span class="c"># writes msa in FASTA format in a gzipped file</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">write</span><span class="p">(</span><span class="s">&quot;msa.gz&quot;</span><span class="p">,</span> <span class="n">msa</span><span class="p">,</span> <span class="n">FASTA</span><span class="p">)</span> <span class="c"># writes msa in FASTA format in a gzipped file</span>
 </pre></div>
 
 </div>
@@ -432,7 +432,7 @@ KKDLFYKEVEGRMESLKRRPAEKEKTTRSEKINVTFNVIIGLVILLGVIFTLFRV
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="p">;</span><span class="n">zcat</span> <span class="n">msa</span><span class="o">.</span><span class="n">gz</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="p">;</span><span class="n">zcat</span> <span class="n">msa</span><span class="o">.</span><span class="n">gz</span>
 </pre></div>
 
 </div>
@@ -524,7 +524,7 @@ KKDLFYKEVEGRMESLKRRPAEKEKTTRSEKINVTFNVIIGLVILLGVIFTLFRV
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Julia REPL shows the <code>Annotations</code> type as they are represented in the <a href="https://en.wikipedia.org/wiki/Stockholm_format">Stockholm format<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a>. You can get the <code>Annotations</code> inside an annotated MSA or sequence using the <code>annotations</code> function.</p>
+<p>Julia REPL shows the <code>Annotations</code> type as they are represented in the <a href="https://en.wikipedia.org/wiki/Stockholm_format">Stockholm format<span class="fa fa-external-link" aria-hidden="true"></span></a>. You can get the <code>Annotations</code> inside an annotated MSA or sequence using the <code>annotations</code> function.</p>
 
 </div>
 </div>
@@ -534,7 +534,7 @@ KKDLFYKEVEGRMESLKRRPAEKEKTTRSEKINVTFNVIIGLVILLGVIFTLFRV
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">annotations</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">annotations</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -601,7 +601,7 @@ KKDLFYKEVEGRMESLKRRPAEKEKTTRSEKINVTFNVIIGLVILLGVIFTLFRV
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">getannotsequence</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="s">&quot;F9Q2V2_STROR/1-43&quot;</span><span class="p">,</span> <span class="s">&quot;AC&quot;</span><span class="p">)</span> <span class="c"># (&quot;F9Q2V2_STROR/1-43&quot;, &quot;AC&quot;) is the key in the dictionary</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">getannotsequence</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="s">&quot;F9Q2V2_STROR/1-43&quot;</span><span class="p">,</span> <span class="s">&quot;AC&quot;</span><span class="p">)</span> <span class="c"># (&quot;F9Q2V2_STROR/1-43&quot;, &quot;AC&quot;) is the key in the dictionary</span>
 </pre></div>
 
 </div>
@@ -616,7 +616,7 @@ KKDLFYKEVEGRMESLKRRPAEKEKTTRSEKINVTFNVIIGLVILLGVIFTLFRV
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&quot;F9Q2V2.1&quot;</pre>
+<pre>&#34;F9Q2V2.1&#34;</pre>
 </div>
 
 </div>
@@ -640,7 +640,7 @@ KKDLFYKEVEGRMESLKRRPAEKEKTTRSEKINVTFNVIIGLVILLGVIFTLFRV
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">setannotsequence</span><span class="o">!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="s">&quot;F9Q2V2_STROR/1-43&quot;</span><span class="p">,</span> <span class="s">&quot;New_Feature_Name&quot;</span><span class="p">,</span> <span class="s">&quot;New_Annotation&quot;</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">setannotsequence!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="s">&quot;F9Q2V2_STROR/1-43&quot;</span><span class="p">,</span> <span class="s">&quot;New_Feature_Name&quot;</span><span class="p">,</span> <span class="s">&quot;New_Annotation&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -655,7 +655,7 @@ KKDLFYKEVEGRMESLKRRPAEKEKTTRSEKINVTFNVIIGLVILLGVIFTLFRV
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&quot;New_Annotation&quot;</pre>
+<pre>&#34;New_Annotation&#34;</pre>
 </div>
 
 </div>
@@ -680,7 +680,7 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">getannotsequence</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">getannotsequence</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -696,10 +696,10 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 
 <div class="output_text output_subarea output_execute_result">
 <pre>Dict{Tuple{ASCIIString,ASCIIString},ASCIIString} with 4 entries:
-  (&quot;F9Q2V2_STROR/1-… =&gt; &quot;F9Q2V2.1&quot;
-  (&quot;T0TY77_9STRE/5-… =&gt; &quot;T0TY77.1&quot;
-  (&quot;F9Q2V2_STROR/1-… =&gt; &quot;New_Annotation&quot;
-  (&quot;A8AWV6_STRGC/3-… =&gt; &quot;A8AWV6.1&quot;</pre>
+  (&#34;F9Q2V2_STROR/1-… =&gt; &#34;F9Q2V2.1&#34;
+  (&#34;T0TY77_9STRE/5-… =&gt; &#34;T0TY77.1&#34;
+  (&#34;F9Q2V2_STROR/1-… =&gt; &#34;New_Annotation&#34;
+  (&#34;A8AWV6_STRGC/3-… =&gt; &#34;A8AWV6.1&#34;</pre>
 </div>
 
 </div>
@@ -768,7 +768,7 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF07388/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF07388/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
 
 <span class="n">names</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span> <span class="c"># the function names returns the sequence names in the MSA</span>
 </pre></div>
@@ -795,10 +795,10 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 
 <div class="output_text output_subarea output_execute_result">
 <pre>4-element IndexedArrays.IndexedArray{ASCIIString}:
- &quot;M5A3D2_9ACTN/208-402&quot;
- &quot;Q4W584_NEIMB/1-222&quot;  
- &quot;C5ZW53_9HELI/1-498&quot;  
- &quot;M5A3D2_9ACTN/2-157&quot;  </pre>
+ &#34;M5A3D2_9ACTN/208-402&#34;
+ &#34;Q4W584_NEIMB/1-222&#34;  
+ &#34;C5ZW53_9HELI/1-498&#34;  
+ &#34;M5A3D2_9ACTN/2-157&#34;  </pre>
 </div>
 
 </div>
@@ -812,7 +812,7 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">mask</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">x</span> <span class="o">-&gt;</span> <span class="n">ismatch</span><span class="p">(</span><span class="n">r</span><span class="s">&quot;_9ACTN&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">),</span> <span class="n">names</span><span class="p">(</span><span class="n">msa</span><span class="p">))</span> <span class="c"># an element of mask is true if &quot;_9ACTN&quot; is in the name</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">mask</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">x</span> <span class="o">-&gt;</span> <span class="n">ismatch</span><span class="p">(</span><span class="n">r</span><span class="s">&quot;_9ACTN&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">),</span> <span class="n">names</span><span class="p">(</span><span class="n">msa</span><span class="p">))</span> <span class="c"># an element of mask is true if &quot;_9ACTN&quot; is in the name</span>
 </pre></div>
 
 </div>
@@ -845,7 +845,7 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">filtersequences</span><span class="o">!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">mask</span><span class="p">)</span> <span class="c"># deletes all the sequences where mask is false</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">filtersequences!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">mask</span><span class="p">)</span> <span class="c"># deletes all the sequences where mask is false</span>
 
 <span class="n">names</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
@@ -863,8 +863,8 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 
 <div class="output_text output_subarea output_execute_result">
 <pre>2-element IndexedArrays.IndexedArray{ASCIIString}:
- &quot;M5A3D2_9ACTN/208-402&quot;
- &quot;M5A3D2_9ACTN/2-157&quot;  </pre>
+ &#34;M5A3D2_9ACTN/208-402&#34;
+ &#34;M5A3D2_9ACTN/2-157&#34;  </pre>
 </div>
 
 </div>
@@ -888,7 +888,7 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The most simple input for the command line tool <a href="#https://rostlab.org/owiki/index.php/FreeContact">freecontact<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a> (if you don’t want to set <code>--mincontsep</code>) is a <code>Raw</code> MSA file with a reference sequence without insertions or gaps. This is easy to get with MIToS using <code>read</code> (deletes the insert columns), <code>setreference!</code> (to choose a reference), <code>adjustreference!</code> (to delete columns with gaps in the reference) and <code>write</code> (to save it in <code>Raw</code> format) functions.</p>
+<p>The most simple input for the command line tool <a href="#https://rostlab.org/owiki/index.php/FreeContact">freecontact<span class="fa fa-external-link" aria-hidden="true"></span></a> (if you don’t want to set <code>--mincontsep</code>) is a <code>Raw</code> MSA file with a reference sequence without insertions or gaps. This is easy to get with MIToS using <code>read</code> (deletes the insert columns), <code>setreference!</code> (to choose a reference), <code>adjustreference!</code> (to delete columns with gaps in the reference) and <code>write</code> (to save it in <code>Raw</code> format) functions.</p>
 
 </div>
 </div>
@@ -898,7 +898,7 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF02476/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF02476/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -939,7 +939,7 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">maxcoverage</span><span class="p">,</span> <span class="n">indice</span> <span class="o">=</span> <span class="n">findmax</span><span class="p">(</span><span class="n">coverage</span><span class="p">(</span><span class="n">msa</span><span class="p">))</span> <span class="c"># chooses the sequence with more coverage of the MSA</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">maxcoverage</span><span class="p">,</span> <span class="n">indice</span> <span class="o">=</span> <span class="n">findmax</span><span class="p">(</span><span class="n">coverage</span><span class="p">(</span><span class="n">msa</span><span class="p">))</span> <span class="c"># chooses the sequence with more coverage of the MSA</span>
 </pre></div>
 
 </div>
@@ -968,7 +968,7 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">setreference</span><span class="o">!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">indice</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">setreference!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">indice</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1000,7 +1000,7 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">adjustreference</span><span class="o">!</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">adjustreference!</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1032,7 +1032,7 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">write</span><span class="p">(</span><span class="s">&quot;tofreecontact.msa&quot;</span><span class="p">,</span> <span class="n">msa</span><span class="p">,</span> <span class="n">Raw</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">write</span><span class="p">(</span><span class="s">&quot;tofreecontact.msa&quot;</span><span class="p">,</span> <span class="n">msa</span><span class="p">,</span> <span class="n">Raw</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1045,7 +1045,7 @@ As you can see, the new sequence annotation is now part of our MSA annotations.<
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="p">;</span><span class="n">cat</span> <span class="n">tofreecontact</span><span class="o">.</span><span class="n">msa</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="p">;</span><span class="n">cat</span> <span class="n">tofreecontact</span><span class="o">.</span><span class="n">msa</span>
 </pre></div>
 
 </div>
@@ -1076,7 +1076,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="#"><i class="fa fa-arrow-up"></i></a></p>
 <h2 id="Column-and-sequence-mappings">Column and sequence mappings<a class="anchor-link" href="#Column-and-sequence-mappings">&#182;</a></h2><p>Inserts in a Stockholm MSA allow to access the full fragment of the aligned sequences. Using this, combined with the sequence names with coordinates used in Pfam, you can know what is the UniProt residue number of each residue in the MSA.</p>
-<div class="highlight"><pre><span class="s">&quot;PROT_SPECI/3-15 .....insertALIGNED&quot;</span>
+<div class="highlight"><pre><span></span><span class="s">&quot;PROT_SPECI/3-15 .....insertALIGNED&quot;</span>
 <span class="c">#                     3456789111111</span>
 <span class="c">#                            012345</span>
 </pre></div>
@@ -1090,7 +1090,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span> <span class="o">=</span> <span class="n">parse</span><span class="p">(</span><span class="s">&quot;PROT_SPECI/3-15 .....insertALIGNED&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span> <span class="n">generatemapping</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="n">useidcoordinates</span><span class="o">=</span><span class="n">true</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span> <span class="o">=</span> <span class="n">parse</span><span class="p">(</span><span class="s">&quot;PROT_SPECI/3-15 .....insertALIGNED&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span> <span class="n">generatemapping</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="n">useidcoordinates</span><span class="o">=</span><span class="n">true</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1130,7 +1130,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">annotations</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">annotations</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1174,7 +1174,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">getsequencemapping</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="s">&quot;PROT_SPECI/3-15&quot;</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">getsequencemapping</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="s">&quot;PROT_SPECI/3-15&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1210,7 +1210,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">getcolumnmapping</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">getcolumnmapping</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1267,7 +1267,7 @@ We are going to use MIToS mapping data to create this header, so we read the MSA
 <div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span> <span class="s">&quot;http://pfam.xfam.org/family/PF02476/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span> <span class="s">&quot;http://pfam.xfam.org/family/PF02476/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span>
             <span class="n">generatemapping</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="n">useidcoordinates</span><span class="o">=</span><span class="n">true</span><span class="p">)</span>
 </pre></div>
 
@@ -1319,9 +1319,9 @@ We are going to use MIToS mapping data to create this header, so we read the MSA
 <div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">maxcoverage</span><span class="p">,</span> <span class="n">indice</span> <span class="o">=</span> <span class="n">findmax</span><span class="p">(</span><span class="n">coverage</span><span class="p">(</span><span class="n">msa</span><span class="p">))</span>
-<span class="n">setreference</span><span class="o">!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">indice</span><span class="p">)</span>
-<span class="n">adjustreference</span><span class="o">!</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">maxcoverage</span><span class="p">,</span> <span class="n">indice</span> <span class="o">=</span> <span class="n">findmax</span><span class="p">(</span><span class="n">coverage</span><span class="p">(</span><span class="n">msa</span><span class="p">))</span>
+<span class="n">setreference!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">indice</span><span class="p">)</span>
+<span class="n">adjustreference!</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1363,13 +1363,13 @@ We are going to use MIToS mapping data to create this header, so we read the MSA
 <div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">seqmap</span> <span class="o">=</span> <span class="n">getsequencemapping</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c"># seqmap will be a vector with the residue numbers of the first sequence (reference)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">seqmap</span> <span class="o">=</span> <span class="n">getsequencemapping</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c"># seqmap will be a vector with the residue numbers of the first sequence (reference)</span>
 
 <span class="n">seq</span> <span class="o">=</span> <span class="n">collect</span><span class="p">(</span> <span class="n">asciisequence</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="p">)</span> <span class="c"># seq will be a Vector of Chars with the reference sequence</span>
 
 <span class="n">sequence</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">seqmap</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span><span class="n">seqmap</span><span class="p">[</span><span class="k">end</span><span class="p">])</span> <span class="k">do</span> <span class="n">seqpos</span> <span class="c"># for each position in the whole fragment</span>
     <span class="k">if</span> <span class="n">seqpos</span> <span class="k">in</span> <span class="n">seqmap</span>                         <span class="c"># if that position is in the MSA</span>
-        <span class="n">shift</span><span class="o">!</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span>                             <span class="c"># the residue is taken from seq</span>
+        <span class="n">shift!</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span>                             <span class="c"># the residue is taken from seq</span>
     <span class="k">else</span>                                        <span class="c"># otherwise</span>
         <span class="sc">&#39;x&#39;</span>                                     <span class="c"># &#39;x&#39; is included</span>
     <span class="k">end</span>
@@ -1390,7 +1390,7 @@ We are going to use MIToS mapping data to create this header, so we read the MSA
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&quot;LLHQERPGPxRLYHLWVVGAADLCVPFFEYAQKTRxxxRFIATKTNDAWVGEPWPLPDRFLPERTVSWTPFPAAPNHPLENLLSRYEYQYGVVVPxxxxxxxxRWLRSLVAPHxKPRPASSRPHPATHPTQRPCFTC&quot;</pre>
+<pre>&#34;LLHQERPGPxRLYHLWVVGAADLCVPFFEYAQKTRxxxRFIATKTNDAWVGEPWPLPDRFLPERTVSWTPFPAAPNHPLENLLSRYEYQYGVVVPxxxxxxxxRWLRSLVAPHxKPRPASSRPHPATHPTQRPCFTC&#34;</pre>
 </div>
 
 </div>
@@ -1414,7 +1414,7 @@ We are going to use MIToS mapping data to create this header, so we read the MSA
 <div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">open</span><span class="p">(</span><span class="s">&quot;tofreecontact.msa&quot;</span><span class="p">,</span> <span class="s">&quot;w&quot;</span><span class="p">)</span> <span class="k">do</span> <span class="n">fh</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">open</span><span class="p">(</span><span class="s">&quot;tofreecontact.msa&quot;</span><span class="p">,</span> <span class="s">&quot;w&quot;</span><span class="p">)</span> <span class="k">do</span> <span class="n">fh</span>
     
     <span class="n">println</span><span class="p">(</span><span class="n">fh</span><span class="p">,</span> <span class="s">&quot;# querystart=&quot;</span><span class="p">,</span> <span class="n">seqmap</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
     
@@ -1443,7 +1443,7 @@ We are going to use MIToS mapping data to create this header, so we read the MSA
 <div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">write</span><span class="p">(</span><span class="s">&quot;tofreecontact.msa&quot;</span><span class="p">,</span> <span class="n">msa</span><span class="p">,</span> <span class="n">Raw</span><span class="p">,</span> <span class="s">&quot;a&quot;</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">write</span><span class="p">(</span><span class="s">&quot;tofreecontact.msa&quot;</span><span class="p">,</span> <span class="n">msa</span><span class="p">,</span> <span class="n">Raw</span><span class="p">,</span> <span class="s">&quot;a&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1456,7 +1456,7 @@ We are going to use MIToS mapping data to create this header, so we read the MSA
 <div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="p">;</span><span class="n">cat</span> <span class="n">tofreecontact</span><span class="o">.</span><span class="n">msa</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="p">;</span><span class="n">cat</span> <span class="n">tofreecontact</span><span class="o">.</span><span class="n">msa</span>
 </pre></div>
 
 </div>
@@ -1498,7 +1498,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span> <span class="s">&quot;http://pfam.xfam.org/family/PF16996/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span> <span class="s">&quot;http://pfam.xfam.org/family/PF16996/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span>
             <span class="n">generatemapping</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="n">useidcoordinates</span><span class="o">=</span><span class="n">true</span><span class="p">)</span>
 </pre></div>
 
@@ -1540,7 +1540,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span><span class="p">[</span><span class="mi">2</span><span class="p">,:]</span> <span class="c"># second sequence of the MSA</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span><span class="p">[</span><span class="mi">2</span><span class="p">,:]</span> <span class="c"># second sequence of the MSA</span>
 </pre></div>
 
 </div>
@@ -1580,7 +1580,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">secondsequence</span> <span class="o">=</span> <span class="n">getsequence</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">secondsequence</span> <span class="o">=</span> <span class="n">getsequence</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1620,7 +1620,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">annotations</span><span class="p">(</span><span class="n">secondsequence</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">annotations</span><span class="p">(</span><span class="n">secondsequence</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1688,7 +1688,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">asciisequence</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">asciisequence</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1703,7 +1703,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&quot;------------MEELKQGALKKEKPTRGEKISKTFSILLGMLILLTLIFTLL--&quot;</pre>
+<pre>&#34;------------MEELKQGALKKEKPTRGEKISKTFSILLGMLILLTLIFTLL--&#34;</pre>
 </div>
 
 </div>
@@ -1727,7 +1727,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">getresiduesequences</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">getresiduesequences</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1786,7 +1786,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span> <span class="o">=</span> <span class="n">vcat</span><span class="p">(</span> <span class="n">transpose</span><span class="p">(</span><span class="n">res</span><span class="s">&quot;--GGG-&quot;</span><span class="p">),</span>      <span class="c"># res&quot;...&quot; uses the @res_str macro to create a (column) Vector{Residue}</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span> <span class="o">=</span> <span class="n">vcat</span><span class="p">(</span> <span class="n">transpose</span><span class="p">(</span><span class="n">res</span><span class="s">&quot;--GGG-&quot;</span><span class="p">),</span>      <span class="c"># res&quot;...&quot; uses the @res_str macro to create a (column) Vector{Residue}</span>
             <span class="n">transpose</span><span class="p">(</span><span class="n">res</span><span class="s">&quot;---GGG&quot;</span><span class="p">)</span> <span class="p">)</span>
 <span class="c">#              identities 000110 sum 2</span>
 <span class="c">#        aligned residues 001111 sum 4</span>
@@ -1820,7 +1820,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">percentidentity</span><span class="p">(</span><span class="n">msa</span><span class="p">[</span><span class="mi">1</span><span class="p">,:],</span> <span class="n">msa</span><span class="p">[</span><span class="mi">2</span><span class="p">,:])</span> <span class="c"># 2 / 4</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">percentidentity</span><span class="p">(</span><span class="n">msa</span><span class="p">[</span><span class="mi">1</span><span class="p">,:],</span> <span class="n">msa</span><span class="p">[</span><span class="mi">2</span><span class="p">,:])</span> <span class="c"># 2 / 4</span>
 </pre></div>
 
 </div>
@@ -1859,7 +1859,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">percentidentity</span><span class="p">(</span><span class="n">msa</span><span class="p">[</span><span class="mi">1</span><span class="p">,:],</span> <span class="n">msa</span><span class="p">[</span><span class="mi">2</span><span class="p">,:],</span> <span class="mi">62</span><span class="p">)</span> <span class="c"># 50% &gt;= 62%</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">percentidentity</span><span class="p">(</span><span class="n">msa</span><span class="p">[</span><span class="mi">1</span><span class="p">,:],</span> <span class="n">msa</span><span class="p">[</span><span class="mi">2</span><span class="p">,:],</span> <span class="mi">62</span><span class="p">)</span> <span class="c"># 50% &gt;= 62%</span>
 </pre></div>
 
 </div>
@@ -1898,7 +1898,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The <code>gapfraction</code> and <code>coverage</code> functions return a vector of number between <code>0.0</code> and <code>1.0</code> (fraction of...). Sometime it’s useful to plot this data to quickly understand the MSA structure. In this example, we are going to use the <a href="#http://plots.readthedocs.org/en/latest/">Plots<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a> package for plotting, with a <a href="#https://github.com/stevengj/PyPlot.jl">PyPlot<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a> backend, but you are free to use any of the Julia plotting libraries.</p>
+<p>The <code>gapfraction</code> and <code>coverage</code> functions return a vector of number between <code>0.0</code> and <code>1.0</code> (fraction of...). Sometime it’s useful to plot this data to quickly understand the MSA structure. In this example, we are going to use the <a href="#http://plots.readthedocs.org/en/latest/">Plots<span class="fa fa-external-link" aria-hidden="true"></span></a> package for plotting, with a <a href="#https://github.com/stevengj/PyPlot.jl">PyPlot<span class="fa fa-external-link" aria-hidden="true"></span></a> backend, but you are free to use any of the Julia plotting libraries.</p>
 
 </div>
 </div>
@@ -1908,7 +1908,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF09776/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF09776/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
 
 <span class="k">using</span> <span class="n">Plots</span>
 
@@ -1956,7 +1956,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">plot</span><span class="p">(</span>   <span class="mi">1</span><span class="p">:</span><span class="n">nsequences</span><span class="p">(</span><span class="n">msa</span><span class="p">),</span> <span class="c"># x is a range from 1 to the number of sequences</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">plot</span><span class="p">(</span>   <span class="mi">1</span><span class="p">:</span><span class="n">nsequences</span><span class="p">(</span><span class="n">msa</span><span class="p">),</span> <span class="c"># x is a range from 1 to the number of sequences</span>
         <span class="n">coverage</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span> <span class="o">.*</span> <span class="mi">100</span><span class="p">,</span> <span class="c"># y is a Vector{Float64} with the coverage of each sequence</span>
         <span class="n">linetype</span> <span class="o">=</span> <span class="p">:</span><span class="n">line</span><span class="p">,</span> 
         <span class="n">ylabel</span> <span class="o">=</span> <span class="s">&quot;coverage [%]&quot;</span><span class="p">,</span>
@@ -1989,7 +1989,7 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">plot</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">plot</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2037,13 +2037,13 @@ MLESEVSGNAPHSLWIVGAADICRIALECIPLPKRLLAIKVSGTWSGMPWAIPDNIQTLLTSTWEPKFDTPEDRAHFCDS
 <div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\t</span><span class="s">sequences</span><span class="se">\t</span><span class="s">columns&quot;</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\t</span><span class="s">sequences</span><span class="se">\t</span><span class="s">columns&quot;</span><span class="p">)</span>
 
 <span class="n">println</span><span class="p">(</span> <span class="s">&quot;Before:</span><span class="se">\t</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">nsequences</span><span class="p">(</span><span class="n">msa</span><span class="p">),</span> <span class="s">&quot;</span><span class="se">\t\t</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">ncolumns</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>  <span class="p">)</span>
 
-<span class="n">filtersequences</span><span class="o">!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">coverage</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span> <span class="o">.&gt;=</span> <span class="mf">0.9</span><span class="p">)</span> <span class="c"># deletes sequences with less than 90% coverage of the MSA length </span>
+<span class="n">filtersequences!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">coverage</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span> <span class="o">.&gt;=</span> <span class="mf">0.9</span><span class="p">)</span> <span class="c"># deletes sequences with less than 90% coverage of the MSA length </span>
 
-<span class="n">filtercolumns</span><span class="o">!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">columngapfraction</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span> <span class="o">.&lt;=</span> <span class="mf">0.1</span><span class="p">)</span> <span class="c"># deletes columns with more than 10% of gaps</span>
+<span class="n">filtercolumns!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">columngapfraction</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span> <span class="o">.&lt;=</span> <span class="mf">0.1</span><span class="p">)</span> <span class="c"># deletes columns with more than 10% of gaps</span>
 
 <span class="n">println</span><span class="p">(</span> <span class="s">&quot;After:</span><span class="se">\t</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">nsequences</span><span class="p">(</span><span class="n">msa</span><span class="p">),</span> <span class="s">&quot;</span><span class="se">\t\t</span><span class="s">&quot;</span><span class="p">,</span>  <span class="n">ncolumns</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>  <span class="p">)</span>
 </pre></div>
@@ -2074,7 +2074,7 @@ After:	50		110
 <div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">histogram</span><span class="p">(</span>  <span class="n">columngapfraction</span><span class="p">(</span><span class="n">msa</span><span class="p">),</span> <span class="c"># Vector{Float64} with the fraction of gaps of each column</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">histogram</span><span class="p">(</span>  <span class="n">columngapfraction</span><span class="p">(</span><span class="n">msa</span><span class="p">),</span> <span class="c"># Vector{Float64} with the fraction of gaps of each column</span>
 <span class="n">xlabel</span> <span class="o">=</span> <span class="s">&quot;gap fraction in [0,1]&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="n">false</span><span class="p">)</span>
 </pre></div>
 
@@ -2103,7 +2103,7 @@ After:	50		110
 <div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">histogram</span><span class="p">(</span>  <span class="n">coverage</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span> <span class="o">.*</span> <span class="mf">100.0</span><span class="p">,</span> <span class="c">#  Vector{Float64} with the coverage of each sequence</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">histogram</span><span class="p">(</span>  <span class="n">coverage</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span> <span class="o">.*</span> <span class="mf">100.0</span><span class="p">,</span> <span class="c">#  Vector{Float64} with the coverage of each sequence</span>
             <span class="n">xlabel</span> <span class="o">=</span> <span class="s">&quot;coverage [%]&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="n">false</span><span class="p">)</span>
 </pre></div>
 
@@ -2152,7 +2152,7 @@ After:	50		110
 <div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF09776/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF09776/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
 
 <span class="n">pid</span> <span class="o">=</span> <span class="n">percentidentity</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
@@ -2204,7 +2204,7 @@ After:	50		110
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>MIToS stores the matrix of percentage of identity between the aligned sequences as a PairwiseListMatrix
-from the <a href="#http://diegozea.github.io/PairwiseListMatrices.jl/">PairwiseListMatrices<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a> package. This matrix type saves RAM, allowing the storage of  big matrices. In this example, we use the <code>to_table</code> function of <em>PairwiseListMatrices</em> to convert the matrix into a table with indices.</p>
+from the <a href="#http://diegozea.github.io/PairwiseListMatrices.jl/">PairwiseListMatrices<span class="fa fa-external-link" aria-hidden="true"></span></a> package. This matrix type saves RAM, allowing the storage of  big matrices. In this example, we use the <code>to_table</code> function of <em>PairwiseListMatrices</em> to convert the matrix into a table with indices.</p>
 
 </div>
 </div>
@@ -2214,7 +2214,7 @@ from the <a href="#http://diegozea.github.io/PairwiseListMatrices.jl/">PairwiseL
 <div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">pidtable</span> <span class="o">=</span> <span class="n">PairwiseListMatrices</span><span class="o">.</span><span class="n">to_table</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="n">false</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">pidtable</span> <span class="o">=</span> <span class="n">PairwiseListMatrices</span><span class="o">.</span><span class="n">to_table</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="n">false</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2230,17 +2230,17 @@ from the <a href="#http://diegozea.github.io/PairwiseListMatrices.jl/">PairwiseL
 
 <div class="output_text output_subarea output_execute_result">
 <pre>10153x3 Array{Any,2}:
- &quot;E4XN03_OIKDI/34-146&quot;     &quot;G1RVK4_NOMLE/46-161&quot;  22.6087
- &quot;E4XN03_OIKDI/34-146&quot;     &quot;B4NHY3_DROWI/2-106&quot;   26.0417
- &quot;E4XN03_OIKDI/34-146&quot;     &quot;G6CRH5_DANPL/1-73&quot;    23.3333
- &quot;E4XN03_OIKDI/34-146&quot;     &quot;RM55_DROME/2-106&quot;     24.7312
- &quot;E4XN03_OIKDI/34-146&quot;     &quot;G5C999_HETGA/5-102&quot;   25.5319
+ &#34;E4XN03_OIKDI/34-146&#34;     &#34;G1RVK4_NOMLE/46-161&#34;  22.6087
+ &#34;E4XN03_OIKDI/34-146&#34;     &#34;B4NHY3_DROWI/2-106&#34;   26.0417
+ &#34;E4XN03_OIKDI/34-146&#34;     &#34;G6CRH5_DANPL/1-73&#34;    23.3333
+ &#34;E4XN03_OIKDI/34-146&#34;     &#34;RM55_DROME/2-106&#34;     24.7312
+ &#34;E4XN03_OIKDI/34-146&#34;     &#34;G5C999_HETGA/5-102&#34;   25.5319
  ⋮                                                       
- &quot;A0A090MXF3_STRRB/2-104&quot;  &quot;RM55_MOUSE/9-124&quot;     30.1724
- &quot;A0A090MXF3_STRRB/2-104&quot;  &quot;M3XPJ7_MUSPF/10-125&quot;  31.3043
- &quot;G3WPK1_SARHA/11-126&quot;     &quot;RM55_MOUSE/9-124&quot;     54.3103
- &quot;G3WPK1_SARHA/11-126&quot;     &quot;M3XPJ7_MUSPF/10-125&quot;  62.6087
- &quot;RM55_MOUSE/9-124&quot;        &quot;M3XPJ7_MUSPF/10-125&quot;  70.6897</pre>
+ &#34;A0A090MXF3_STRRB/2-104&#34;  &#34;RM55_MOUSE/9-124&#34;     30.1724
+ &#34;A0A090MXF3_STRRB/2-104&#34;  &#34;M3XPJ7_MUSPF/10-125&#34;  31.3043
+ &#34;G3WPK1_SARHA/11-126&#34;     &#34;RM55_MOUSE/9-124&#34;     54.3103
+ &#34;G3WPK1_SARHA/11-126&#34;     &#34;M3XPJ7_MUSPF/10-125&#34;  62.6087
+ &#34;RM55_MOUSE/9-124&#34;        &#34;M3XPJ7_MUSPF/10-125&#34;  70.6897</pre>
 </div>
 
 </div>
@@ -2264,7 +2264,7 @@ from the <a href="#http://diegozea.github.io/PairwiseListMatrices.jl/">PairwiseL
 <div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">quantile</span><span class="p">(</span><span class="nb">convert</span><span class="p">(</span><span class="n">Vector</span><span class="p">{</span><span class="kt">Float64</span><span class="p">},</span> <span class="n">pidtable</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]),</span> <span class="p">[</span><span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.50</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">1.00</span><span class="p">])</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">quantile</span><span class="p">(</span><span class="nb">convert</span><span class="p">(</span><span class="n">Vector</span><span class="p">{</span><span class="kt">Float64</span><span class="p">},</span> <span class="n">pidtable</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]),</span> <span class="p">[</span><span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.50</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">1.00</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -2308,7 +2308,7 @@ from the <a href="#http://diegozea.github.io/PairwiseListMatrices.jl/">PairwiseL
 <div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">meanpercentidentity</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">meanpercentidentity</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2337,7 +2337,7 @@ from the <a href="#http://diegozea.github.io/PairwiseListMatrices.jl/">PairwiseL
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>One can easily plot that matrix and its distribution using the <code>heatmap</code> and <code>histogram</code> functions of the <a href="#https://github.com/tbreloff/Plots.jl">Plots<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a> package.</p>
+<p>One can easily plot that matrix and its distribution using the <code>heatmap</code> and <code>histogram</code> functions of the <a href="#https://github.com/tbreloff/Plots.jl">Plots<span class="fa fa-external-link" aria-hidden="true"></span></a> package.</p>
 
 </div>
 </div>
@@ -2347,7 +2347,7 @@ from the <a href="#http://diegozea.github.io/PairwiseListMatrices.jl/">PairwiseL
 <div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">heatmap</span><span class="p">(</span><span class="n">full</span><span class="p">(</span><span class="n">pid</span><span class="p">),</span> <span class="n">yflip</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="n">ratio</span><span class="o">=</span><span class="p">:</span><span class="n">equal</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">heatmap</span><span class="p">(</span><span class="n">full</span><span class="p">(</span><span class="n">pid</span><span class="p">),</span> <span class="n">yflip</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="n">ratio</span><span class="o">=</span><span class="p">:</span><span class="n">equal</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2375,7 +2375,7 @@ from the <a href="#http://diegozea.github.io/PairwiseListMatrices.jl/">PairwiseL
 <div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">histogram</span><span class="p">(</span><span class="n">pidtable</span><span class="p">[:,</span><span class="mi">3</span><span class="p">],</span> <span class="n">xlabel</span> <span class="o">=</span><span class="s">&quot;Percentage of identity&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="n">false</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">histogram</span><span class="p">(</span><span class="n">pidtable</span><span class="p">[:,</span><span class="mi">3</span><span class="p">],</span> <span class="n">xlabel</span> <span class="o">=</span><span class="s">&quot;Percentage of identity&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="n">false</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2413,8 +2413,8 @@ from the <a href="#http://diegozea.github.io/PairwiseListMatrices.jl/">PairwiseL
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The <code>MSA</code> module allows to clusterize sequences in a MSA. The <code>hobohmI</code> function takes as input a MSA followed by an identity threshold value, and returns a <code>SequenceCluster</code> type with the result of a <a href="#http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2142204/">Hobohm I<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a> sequence clustering. The Hobohm I algorithm will add a sequence to an existing cluster, if the percentage of identity is equal or greater than the threshold.<br>
-The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> from the <a href="#http://clusteringjl.readthedocs.org/en/latest/index.html">Clustering.jl<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a> package. One advantage of use a sub-type of <code>ClusteringResult</code>is that you are able to use any method defined on <code>Clustering.jl</code> like <code>varinfo</code> (Variation of Information) for example. Also, you can use any clustering algorithm included in <em>Clustering.jl</em>, and convert its result to an <code>SequenceCluster</code> object to use them with MIToS.<br>
+<p>The <code>MSA</code> module allows to clusterize sequences in a MSA. The <code>hobohmI</code> function takes as input a MSA followed by an identity threshold value, and returns a <code>SequenceCluster</code> type with the result of a <a href="#http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2142204/">Hobohm I<span class="fa fa-external-link" aria-hidden="true"></span></a> sequence clustering. The Hobohm I algorithm will add a sequence to an existing cluster, if the percentage of identity is equal or greater than the threshold.<br>
+The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> from the <a href="#http://clusteringjl.readthedocs.org/en/latest/index.html">Clustering.jl<span class="fa fa-external-link" aria-hidden="true"></span></a> package. One advantage of use a sub-type of <code>ClusteringResult</code>is that you are able to use any method defined on <code>Clustering.jl</code> like <code>varinfo</code> (Variation of Information) for example. Also, you can use any clustering algorithm included in <em>Clustering.jl</em>, and convert its result to an <code>SequenceCluster</code> object to use them with MIToS.<br>
 <code>MSA</code> defines the functions <code>nclusters</code> to get the resulting number of clusters, <code>counts</code> to get the number of sequences on each cluster and <code>assignments</code> to get the cluster number of each sequence. The most important method is <code>getweight</code>, which returns the weight of each sequence. This method is used in the <code>Information</code> module of MIToS to reduce redundancy.</p>
 
 </div>
@@ -2436,7 +2436,7 @@ The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> fr
 <div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF09776/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF09776/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
 
 <span class="n">println</span><span class="p">(</span><span class="s">&quot;This MSA has &quot;</span><span class="p">,</span> <span class="n">nsequences</span><span class="p">(</span><span class="n">msa</span><span class="p">),</span> <span class="s">&quot; sequences...&quot;</span><span class="p">)</span>
 </pre></div>
@@ -2474,7 +2474,7 @@ The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> fr
 <div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">clusters</span> <span class="o">=</span> <span class="n">hobohmI</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="mi">62</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">clusters</span> <span class="o">=</span> <span class="n">hobohmI</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="mi">62</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2503,7 +2503,7 @@ The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> fr
 <div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">println</span><span class="p">(</span><span class="s">&quot;...but has only &quot;</span><span class="p">,</span> <span class="n">nclusters</span><span class="p">(</span><span class="n">clusters</span><span class="p">),</span> <span class="s">&quot; sequence clusters after a clustering at 62% identity.&quot;</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">println</span><span class="p">(</span><span class="s">&quot;...but has only &quot;</span><span class="p">,</span> <span class="n">nclusters</span><span class="p">(</span><span class="n">clusters</span><span class="p">),</span> <span class="s">&quot; sequence clusters after a clustering at 62</span><span class="si">% i</span><span class="s">dentity.&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2530,7 +2530,7 @@ The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> fr
 <div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">plot</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">plot</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2558,7 +2558,7 @@ The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> fr
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We are going to use the <a href="#http://dataframesjl.readthedocs.org/en/latest/">DataFrames<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a> package to easily select the sequence with highest coverage of each cluster.</p>
+<p>We are going to use the <a href="#http://dataframesjl.readthedocs.org/en/latest/">DataFrames<span class="fa fa-external-link" aria-hidden="true"></span></a> package to easily select the sequence with highest coverage of each cluster.</p>
 
 </div>
 </div>
@@ -2568,7 +2568,7 @@ The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> fr
 <div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">DataFrames</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">DataFrames</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">(</span> <span class="n">seqnum</span> <span class="o">=</span> <span class="mi">1</span><span class="p">:</span><span class="n">nsequences</span><span class="p">(</span><span class="n">msa</span><span class="p">),</span>
                 <span class="n">seqname</span> <span class="o">=</span> <span class="n">collect</span><span class="p">(</span><span class="n">names</span><span class="p">(</span><span class="n">msa</span><span class="p">)),</span> 
@@ -2611,7 +2611,7 @@ The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> fr
 <div class="prompt input_prompt">In&nbsp;[86]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">h</span> <span class="o">=</span> <span class="n">histogram</span><span class="p">(</span><span class="n">df</span><span class="p">[:</span><span class="n">cluster</span><span class="p">],</span> <span class="n">ylabel</span><span class="o">=</span><span class="s">&quot;nseq&quot;</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">h</span> <span class="o">=</span> <span class="n">histogram</span><span class="p">(</span><span class="n">df</span><span class="p">[:</span><span class="n">cluster</span><span class="p">],</span> <span class="n">ylabel</span><span class="o">=</span><span class="s">&quot;nseq&quot;</span><span class="p">)</span>
 <span class="n">p</span> <span class="o">=</span> <span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">:</span><span class="n">cluster</span><span class="p">,</span> <span class="p">:</span><span class="n">coverage</span><span class="p">,</span> <span class="n">linetype</span><span class="o">=</span><span class="p">:</span><span class="n">scatter</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">nc</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nclusters</span><span class="p">(</span><span class="n">clusters</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span> <span class="p">),</span> <span class="n">legend</span><span class="o">=</span><span class="n">false</span><span class="p">)</span>
 </pre></div>
@@ -2651,7 +2651,7 @@ The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> fr
 <div class="prompt input_prompt">In&nbsp;[87]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">maxcoverage</span> <span class="o">=</span> <span class="n">by</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">:</span><span class="n">cluster</span><span class="p">,</span> <span class="n">cl</span> <span class="o">-&gt;</span> <span class="n">cl</span><span class="p">[</span> <span class="n">findmax</span><span class="p">(</span><span class="n">cl</span><span class="p">[:</span><span class="n">coverage</span><span class="p">])[</span><span class="mi">2</span><span class="p">]</span> <span class="p">,:])</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">maxcoverage</span> <span class="o">=</span> <span class="n">by</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">:</span><span class="n">cluster</span><span class="p">,</span> <span class="n">cl</span> <span class="o">-&gt;</span> <span class="n">cl</span><span class="p">[</span> <span class="n">findmax</span><span class="p">(</span><span class="n">cl</span><span class="p">[:</span><span class="n">coverage</span><span class="p">])[</span><span class="mi">2</span><span class="p">]</span> <span class="p">,:])</span>
 </pre></div>
 
 </div>
@@ -2679,7 +2679,7 @@ The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> fr
 <div class="prompt input_prompt">In&nbsp;[88]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">p</span> <span class="o">=</span> <span class="n">plot</span><span class="p">(</span><span class="n">maxcoverage</span><span class="p">,</span> <span class="p">:</span><span class="n">cluster</span><span class="p">,</span> <span class="p">:</span><span class="n">coverage</span><span class="p">,</span> <span class="n">linetype</span><span class="o">=</span><span class="p">:</span><span class="n">scatter</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">plot</span><span class="p">(</span><span class="n">maxcoverage</span><span class="p">,</span> <span class="p">:</span><span class="n">cluster</span><span class="p">,</span> <span class="p">:</span><span class="n">coverage</span><span class="p">,</span> <span class="n">linetype</span><span class="o">=</span><span class="p">:</span><span class="n">scatter</span><span class="p">)</span>
 <span class="n">h</span> <span class="o">=</span> <span class="n">histogram</span><span class="p">(</span><span class="n">maxcoverage</span><span class="p">[:</span><span class="n">cluster</span><span class="p">],</span> <span class="n">ylabel</span><span class="o">=</span><span class="s">&quot;nseq&quot;</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">nc</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nclusters</span><span class="p">(</span><span class="n">clusters</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span> <span class="p">),</span> <span class="n">legend</span><span class="o">=</span><span class="n">false</span><span class="p">)</span>
 </pre></div>
@@ -2719,7 +2719,7 @@ The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> fr
 <div class="prompt input_prompt">In&nbsp;[89]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">cluster_references</span> <span class="o">=</span> <span class="kt">Bool</span><span class="p">[</span> <span class="n">seqnum</span> <span class="k">in</span> <span class="n">maxcoverage</span><span class="p">[:</span><span class="n">seqnum</span><span class="p">]</span> <span class="k">for</span> <span class="n">seqnum</span> <span class="k">in</span> <span class="mi">1</span><span class="p">:</span><span class="n">nsequences</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span> <span class="p">]</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">cluster_references</span> <span class="o">=</span> <span class="kt">Bool</span><span class="p">[</span> <span class="n">seqnum</span> <span class="k">in</span> <span class="n">maxcoverage</span><span class="p">[:</span><span class="n">seqnum</span><span class="p">]</span> <span class="k">for</span> <span class="n">seqnum</span> <span class="k">in</span> <span class="mi">1</span><span class="p">:</span><span class="n">nsequences</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span> <span class="p">]</span>
 </pre></div>
 
 </div>
@@ -2759,7 +2759,7 @@ The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> fr
 <div class="prompt input_prompt">In&nbsp;[90]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">filtersequences</span><span class="o">!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">cluster_references</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">filtersequences!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">cluster_references</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2799,7 +2799,7 @@ The <code>SequenceCluster</code> is sub-type of <code>ClusteringResult</code> fr
 <div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">plot</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">plot</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
 
 </div>

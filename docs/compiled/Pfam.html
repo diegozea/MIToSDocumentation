@@ -29,7 +29,7 @@
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">Pfam</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">Pfam</span>
 </pre></div>
 
 </div>
@@ -65,7 +65,7 @@
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="c"># Truncate IJulia outputs at:</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># Truncate IJulia outputs at:</span>
 <span class="n">ENV</span><span class="p">[</span><span class="s">&quot;LINES&quot;</span><span class="p">]</span>   <span class="o">=</span> <span class="mi">15</span> 
 <span class="n">ENV</span><span class="p">[</span><span class="s">&quot;COLUMNS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
 </pre></div>
@@ -100,7 +100,7 @@
 <div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">pfamfile</span> <span class="o">=</span> <span class="n">downloadpfam</span><span class="p">(</span><span class="s">&quot;PF12464&quot;</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">pfamfile</span> <span class="o">=</span> <span class="n">downloadpfam</span><span class="p">(</span><span class="s">&quot;PF12464&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -124,7 +124,7 @@
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&quot;PF12464.stockholm.gz&quot;</pre>
+<pre>&#34;PF12464.stockholm.gz&#34;</pre>
 </div>
 
 </div>
@@ -138,7 +138,7 @@
 <div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="n">pfamfile</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span> <span class="n">generatemapping</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="n">useidcoordinates</span><span class="o">=</span><span class="n">true</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="n">pfamfile</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span> <span class="n">generatemapping</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="n">useidcoordinates</span><span class="o">=</span><span class="n">true</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -198,7 +198,7 @@
 <div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">getseq2pdb</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">getseq2pdb</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -214,11 +214,11 @@
 
 <div class="output_text output_subarea output_execute_result">
 <pre>Dict{ASCIIString,Array{Tuple{ASCIIString,ASCIIString},1}} with 5 entries:
-  &quot;Q18A66_PEPD6/6-5… =&gt; [(&quot;4ISX&quot;,&quot;A&quot;),(&quot;3SRT&quot;,&quot;B&quot;),(&quot;3SRT&quot;,…
-  &quot;THGA_ECOLI/8-59&quot;  =&gt; [(&quot;1KRR&quot;,&quot;B&quot;),(&quot;1KRU&quot;,&quot;A&quot;),(&quot;1KRV&quot;,…
-  &quot;MAA_ECOLI/7-58&quot;   =&gt; [(&quot;1OCX&quot;,&quot;C&quot;),(&quot;1OCX&quot;,&quot;A&quot;),(&quot;1OCX&quot;,…
-  &quot;Q9KLB0_VIBCH/8-5… =&gt; [(&quot;3NZ2&quot;,&quot;J&quot;),(&quot;3NZ2&quot;,&quot;D&quot;),(&quot;3NZ2&quot;,…
-  &quot;Q81N16_BACAN/7-5… =&gt; [(&quot;3HJJ&quot;,&quot;C&quot;),(&quot;3IGJ&quot;,&quot;C&quot;),(&quot;3IGJ&quot;,…</pre>
+  &#34;Q18A66_PEPD6/6-5… =&gt; [(&#34;4ISX&#34;,&#34;A&#34;),(&#34;3SRT&#34;,&#34;B&#34;),(&#34;3SRT&#34;,…
+  &#34;THGA_ECOLI/8-59&#34;  =&gt; [(&#34;1KRR&#34;,&#34;B&#34;),(&#34;1KRU&#34;,&#34;A&#34;),(&#34;1KRV&#34;,…
+  &#34;MAA_ECOLI/7-58&#34;   =&gt; [(&#34;1OCX&#34;,&#34;C&#34;),(&#34;1OCX&#34;,&#34;A&#34;),(&#34;1OCX&#34;,…
+  &#34;Q9KLB0_VIBCH/8-5… =&gt; [(&#34;3NZ2&#34;,&#34;J&#34;),(&#34;3NZ2&#34;,&#34;D&#34;),(&#34;3NZ2&#34;,…
+  &#34;Q81N16_BACAN/7-5… =&gt; [(&#34;3HJJ&#34;,&#34;C&#34;),(&#34;3IGJ&#34;,&#34;C&#34;),(&#34;3IGJ&#34;,…</pre>
 </div>
 
 </div>
@@ -242,7 +242,7 @@
 <div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">col2res</span> <span class="o">=</span> <span class="n">msacolumn2pdbresidue</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="s">&quot;MAA_ECOLI/7-58&quot;</span><span class="p">,</span> <span class="s">&quot;1OCX&quot;</span><span class="p">,</span> <span class="s">&quot;C&quot;</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">col2res</span> <span class="o">=</span> <span class="n">msacolumn2pdbresidue</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="s">&quot;MAA_ECOLI/7-58&quot;</span><span class="p">,</span> <span class="s">&quot;1OCX&quot;</span><span class="p">,</span> <span class="s">&quot;C&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -267,16 +267,16 @@
 
 <div class="output_text output_subarea output_execute_result">
 <pre>Dict{Int64,ASCIIString} with 51 entries:
-  46  =&gt; &quot;21&quot;
-  134 =&gt; &quot;48&quot;
-  136 =&gt; &quot;50&quot;
-  55  =&gt; &quot;29&quot;
-  66  =&gt; &quot;38&quot;
-  58  =&gt; &quot;32&quot;
-  59  =&gt; &quot;33&quot;
-  142 =&gt; &quot;56&quot;
-  139 =&gt; &quot;53&quot;
-  57  =&gt; &quot;31&quot;
+  46  =&gt; &#34;21&#34;
+  134 =&gt; &#34;48&#34;
+  136 =&gt; &#34;50&#34;
+  55  =&gt; &#34;29&#34;
+  66  =&gt; &#34;38&#34;
+  58  =&gt; &#34;32&#34;
+  59  =&gt; &#34;33&#34;
+  142 =&gt; &#34;56&#34;
+  139 =&gt; &#34;53&#34;
+  57  =&gt; &#34;31&#34;
   ⋮   =&gt; ⋮</pre>
 </div>
 
@@ -301,7 +301,7 @@
 <div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">PDB</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">PDB</span>
 <span class="n">pdbfile</span> <span class="o">=</span> <span class="n">downloadpdb</span><span class="p">(</span><span class="s">&quot;1OCX&quot;</span><span class="p">)</span>
 <span class="n">pdb</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="n">pdbfile</span><span class="p">,</span> <span class="n">PDBML</span><span class="p">)</span>
 <span class="n">resdict</span> <span class="o">=</span> <span class="p">@</span><span class="n">residuesdict</span> <span class="n">pdb</span> <span class="n">model</span> <span class="s">&quot;1&quot;</span> <span class="n">chain</span> <span class="s">&quot;C&quot;</span> <span class="n">group</span> <span class="s">&quot;ATOM&quot;</span> <span class="n">residue</span> <span class="s">&quot;*&quot;</span>
@@ -366,8 +366,8 @@
 <div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">MSA</span>
-<span class="n">filtercolumns</span><span class="o">!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">hasresidues</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">col2res</span><span class="p">))</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">MSA</span>
+<span class="n">filtercolumns!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">hasresidues</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">col2res</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -427,7 +427,7 @@
 <div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">cmap</span> <span class="o">=</span> <span class="n">msacontacts</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">resdict</span><span class="p">,</span> <span class="n">col2res</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">cmap</span> <span class="o">=</span> <span class="n">msacontacts</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">resdict</span><span class="p">,</span> <span class="n">col2res</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -477,7 +477,7 @@
 <div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">Information</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">Information</span>
 <span class="n">ZMIp</span><span class="p">,</span> <span class="n">MIp</span> <span class="o">=</span> <span class="n">buslje09</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 
 <span class="n">AUC</span><span class="p">(</span><span class="n">ZMIp</span><span class="p">,</span> <span class="n">cmap</span><span class="p">)</span>

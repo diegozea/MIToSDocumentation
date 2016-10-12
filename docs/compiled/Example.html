@@ -13,7 +13,7 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this simple demonstration, you will see how to calculate <strong>ZBLMIp</strong> (<strong>Z</strong> score of the corrected <strong>MIp</strong> using <strong>BL</strong>OSUM62 pseudo frequencies)for <a href="http://pfam.xfam.org/">Pfam<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a> MSA from <a href="#MIToS-in-the-Julia-REPL">Julia REPL</a> or using a <a href="#MIToS-in-system-command-line">MIToS script in the system command line</a>.</p>
+<p>In this simple demonstration, you will see how to calculate <strong>ZBLMIp</strong> (<strong>Z</strong> score of the corrected <strong>MIp</strong> using <strong>BL</strong>OSUM62 pseudo frequencies)for <a href="http://pfam.xfam.org/">Pfam<span class="fa fa-external-link" aria-hidden="true"></span></a> MSA from <a href="#MIToS-in-the-Julia-REPL">Julia REPL</a> or using a <a href="#MIToS-in-system-command-line">MIToS script in the system command line</a>.</p>
 
 </div>
 </div>
@@ -32,7 +32,7 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If you load the <code>Pfam</code> module from <code>MIToS</code>, you will get access to a set of functions that work with Pfam MSAs. In this case, we are going to use it for download a <a href="https://en.wikipedia.org/wiki/Stockholm_format">Stockholm <span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a> MSA from the Pfam website and read it into Julia.</p>
+<p>If you load the <code>Pfam</code> module from <code>MIToS</code>, you will get access to a set of functions that work with Pfam MSAs. In this case, we are going to use it for download a <a href="https://en.wikipedia.org/wiki/Stockholm_format">Stockholm <span class="fa fa-external-link" aria-hidden="true"></span></a> MSA from the Pfam website and read it into Julia.</p>
 
 </div>
 </div>
@@ -42,7 +42,7 @@
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">Pfam</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">Pfam</span>
 </pre></div>
 
 </div>
@@ -55,7 +55,7 @@
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">pfam_file</span> <span class="o">=</span> <span class="n">downloadpfam</span><span class="p">(</span><span class="s">&quot;PF10660&quot;</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">pfam_file</span> <span class="o">=</span> <span class="n">downloadpfam</span><span class="p">(</span><span class="s">&quot;PF10660&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -79,7 +79,7 @@
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&quot;PF10660.stockholm.gz&quot;</pre>
+<pre>&#34;PF10660.stockholm.gz&#34;</pre>
 </div>
 
 </div>
@@ -93,7 +93,7 @@
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="n">pfam_file</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span> <span class="n">generatemapping</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="n">useidcoordinates</span><span class="o">=</span><span class="n">true</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="n">pfam_file</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span> <span class="n">generatemapping</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="n">useidcoordinates</span><span class="o">=</span><span class="n">true</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -164,7 +164,7 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>You can plot this MSA and other MIToS’ objects using the <a href="https://juliaplots.github.io/">Plots<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a> package. The installation of <em>Plots</em> is described in the <em>Installation</em> section of this site:</p>
+<p>You can plot this MSA and other MIToS’ objects using the <a href="https://juliaplots.github.io/">Plots<span class="fa fa-external-link" aria-hidden="true"></span></a> package. The installation of <em>Plots</em> is described in the <em>Installation</em> section of this site:</p>
 
 </div>
 </div>
@@ -174,7 +174,7 @@
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">Plots</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">Plots</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 </pre></div>
 
@@ -210,7 +210,7 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The <code>Information</code> module of <code>MIToS</code> has functions to calculate measures from the <a href="https://en.wikipedia.org/wiki/Information_theory">Information Theory<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a>, such as Entropy and Mutual Information (MI), on a MSA. In this example, we will estimate covariation between columns of the MSA with a corrected <strong>MI</strong> that use the <strong>BL</strong>OSUM62 matrix for calculate pseudo frequencies (<code>BLMI</code>).</p>
+<p>The <code>Information</code> module of <code>MIToS</code> has functions to calculate measures from the <a href="https://en.wikipedia.org/wiki/Information_theory">Information Theory<span class="fa fa-external-link" aria-hidden="true"></span></a>, such as Entropy and Mutual Information (MI), on a MSA. In this example, we will estimate covariation between columns of the MSA with a corrected <strong>MI</strong> that use the <strong>BL</strong>OSUM62 matrix for calculate pseudo frequencies (<code>BLMI</code>).</p>
 
 </div>
 </div>
@@ -220,7 +220,7 @@
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">Information</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">Information</span>
 </pre></div>
 
 </div>
@@ -233,7 +233,7 @@
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">ZBLMIp</span><span class="p">,</span> <span class="n">BLMIp</span> <span class="o">=</span> <span class="n">BLMI</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">ZBLMIp</span><span class="p">,</span> <span class="n">BLMIp</span> <span class="o">=</span> <span class="n">BLMI</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span>
 
 <span class="n">ZBLMIp</span> <span class="c"># shows ZBLMIp scores</span>
 </pre></div>
@@ -300,7 +300,7 @@
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">heatmap</span><span class="p">(</span><span class="n">ZBLMIp</span><span class="p">,</span> <span class="n">yflip</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="p">:</span><span class="n">grays</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">heatmap</span><span class="p">(</span><span class="n">ZBLMIp</span><span class="p">,</span> <span class="n">yflip</span><span class="o">=</span><span class="n">true</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="p">:</span><span class="n">grays</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -347,7 +347,7 @@
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="p">;</span><span class="n">BLMI</span><span class="o">.</span><span class="n">jl</span> <span class="o">-</span><span class="n">f</span> <span class="n">PF14972</span><span class="o">.</span><span class="n">stockholm</span><span class="o">.</span><span class="n">gz</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="p">;</span><span class="n">BLMI</span><span class="o">.</span><span class="n">jl</span> <span class="o">-</span><span class="n">f</span> <span class="n">PF14972</span><span class="o">.</span><span class="n">stockholm</span><span class="o">.</span><span class="n">gz</span>
 </pre></div>
 
 </div>
@@ -360,7 +360,7 @@
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="p">;</span><span class="n">head</span> <span class="o">-</span><span class="mi">20</span> <span class="n">PF14972</span><span class="o">.</span><span class="n">stockholm</span><span class="o">.</span><span class="n">BLMI</span><span class="o">.</span><span class="n">csv</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="p">;</span><span class="n">head</span> <span class="o">-</span><span class="mi">20</span> <span class="n">PF14972</span><span class="o">.</span><span class="n">stockholm</span><span class="o">.</span><span class="n">BLMI</span><span class="o">.</span><span class="n">csv</span>
 </pre></div>
 
 </div>

@@ -21,7 +21,7 @@
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="c"># Truncate IJulia outputs at:</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># Truncate IJulia outputs at:</span>
 <span class="n">ENV</span><span class="p">[</span><span class="s">&quot;LINES&quot;</span><span class="p">]</span>   <span class="o">=</span> <span class="mi">15</span> 
 <span class="n">ENV</span><span class="p">[</span><span class="s">&quot;COLUMNS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
 </pre></div>
@@ -36,7 +36,7 @@
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">Information</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">Information</span>
 </pre></div>
 
 </div>
@@ -84,7 +84,7 @@ This should be a <code>Bool</code> value, where <code>true</code> means than the
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">Pij</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">ResidueProbability</span><span class="p">{</span><span class="kt">Float64</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">false</span><span class="p">})</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Pij</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">ResidueProbability</span><span class="p">{</span><span class="kt">Float64</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">false</span><span class="p">})</span>
 </pre></div>
 
 </div>
@@ -134,7 +134,7 @@ This should be a <code>Bool</code> value, where <code>true</code> means than the
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">MSA</span> <span class="c"># to use res&quot;...&quot; to create Vector{Residue}</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">MSA</span> <span class="c"># to use res&quot;...&quot; to create Vector{Residue}</span>
 
 <span class="n">column_i</span> <span class="o">=</span> <span class="n">res</span><span class="s">&quot;AARANDDDRDC-&quot;</span>
 <span class="n">column_j</span> <span class="o">=</span> <span class="n">res</span><span class="s">&quot;-ARRNNADRAVY&quot;</span>
@@ -180,7 +180,7 @@ This should be a <code>Bool</code> value, where <code>true</code> means than the
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">sum</span><span class="p">(</span><span class="n">Nij</span><span class="p">)</span> <span class="c"># There are 12 Residues, but 2 are gaps</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">sum</span><span class="p">(</span><span class="n">Nij</span><span class="p">)</span> <span class="c"># There are 12 Residues, but 2 are gaps</span>
 </pre></div>
 
 </div>
@@ -209,7 +209,7 @@ This should be a <code>Bool</code> value, where <code>true</code> means than the
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">Nij</span><span class="p">[</span><span class="kt">Int</span><span class="p">(</span><span class="n">Residue</span><span class="p">(</span><span class="sc">&#39;R&#39;</span><span class="p">)),</span> <span class="kt">Int</span><span class="p">(</span><span class="n">Residue</span><span class="p">(</span><span class="sc">&#39;R&#39;</span><span class="p">))]</span> <span class="c"># Use Int to index the table with residues</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Nij</span><span class="p">[</span><span class="kt">Int</span><span class="p">(</span><span class="n">Residue</span><span class="p">(</span><span class="sc">&#39;R&#39;</span><span class="p">)),</span> <span class="kt">Int</span><span class="p">(</span><span class="n">Residue</span><span class="p">(</span><span class="sc">&#39;R&#39;</span><span class="p">))]</span> <span class="c"># Use Int to index the table with residues</span>
 </pre></div>
 
 </div>
@@ -248,7 +248,7 @@ This should be a <code>Bool</code> value, where <code>true</code> means than the
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">fill</span><span class="o">!</span><span class="p">(</span><span class="n">Pij</span><span class="p">,</span> <span class="n">Nij</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">fill!</span><span class="p">(</span><span class="n">Pij</span><span class="p">,</span> <span class="n">Nij</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -308,7 +308,7 @@ This should be a <code>Bool</code> value, where <code>true</code> means than the
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">MSA</span> <span class="c"># to use getsequence on the one sequence FASTA</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">MSA</span> <span class="c"># to use getsequence on the one sequence FASTA</span>
 
 <span class="n">seq</span> <span class="o">=</span> <span class="n">getsequence</span><span class="p">(</span><span class="n">read</span><span class="p">(</span><span class="s">&quot;http://www.uniprot.org/uniprot/P29374.fasta&quot;</span><span class="p">,</span> <span class="n">FASTA</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
@@ -369,7 +369,7 @@ This should be a <code>Bool</code> value, where <code>true</code> means than the
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">frequencies</span> <span class="o">=</span> <span class="n">probabilities</span><span class="p">(</span><span class="kt">Float64</span><span class="p">,</span> <span class="n">seq</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">frequencies</span> <span class="o">=</span> <span class="n">probabilities</span><span class="p">(</span><span class="kt">Float64</span><span class="p">,</span> <span class="n">seq</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -409,7 +409,7 @@ This should be a <code>Bool</code> value, where <code>true</code> means than the
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="c"># Pkg.add(&quot;Plots&quot;) # to install it</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># Pkg.add(&quot;Plots&quot;) # to install it</span>
 <span class="k">using</span> <span class="n">Plots</span> <span class="c"># We choose Plots because it&#39;s intuitive, concise and backend independent</span>
 
 <span class="c"># Pkg.add(&quot;PyPlot&quot;)</span>
@@ -452,7 +452,7 @@ This should be a <code>Bool</code> value, where <code>true</code> means than the
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">bar</span><span class="p">(</span> 
+<div class=" highlight hl-julia"><pre><span></span><span class="n">bar</span><span class="p">(</span> 
     <span class="mi">1</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> 
     <span class="p">[</span> <span class="n">frequencies</span>  <span class="n">BLOSUM62_Pi</span> <span class="p">],</span> 
     <span class="n">lab</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&quot;Sequence&quot;</span>  <span class="s">&quot;BLOSUM62&quot;</span>   <span class="p">],</span> 
@@ -486,11 +486,11 @@ This should be a <code>Bool</code> value, where <code>true</code> means than the
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="#"><i class="fa fa-arrow-up"></i></a></p>
-<h2 id="Low-count-corrections">Low count corrections<a class="anchor-link" href="#Low-count-corrections">&#182;</a></h2><p>Low number of observations can lead to sparse contingency tables, that lead to wrong probability estimations. It is shown in <a href="#http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2672635/"><em>Buslje et. al. 2009</em><span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a> that low-count corrections, can lead to improvements in the contact prediction capabilities of the Mutual Information.<br>
+<h2 id="Low-count-corrections">Low count corrections<a class="anchor-link" href="#Low-count-corrections">&#182;</a></h2><p>Low number of observations can lead to sparse contingency tables, that lead to wrong probability estimations. It is shown in <a href="#http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2672635/"><em>Buslje et. al. 2009</em><span class="fa fa-external-link" aria-hidden="true"></span></a> that low-count corrections, can lead to improvements in the contact prediction capabilities of the Mutual Information.<br>
 The Information module has available two low-count corrections:</p>
 <ol>
-<li><a href="https://en.wikipedia.org/wiki/Additive_smoothing">Additive Smoothing<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a>; the constant value pseudocount described in <a href="#http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2672635/"><em>Buslje et. al. 2009</em><span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a>.  </li>
-<li>BLOSUM62 based pseudo frequencies of residues pairs, similar to <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC146917/"><em>Altschul et. al. 1997</em><span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a>.  </li>
+<li><a href="https://en.wikipedia.org/wiki/Additive_smoothing">Additive Smoothing<span class="fa fa-external-link" aria-hidden="true"></span></a>; the constant value pseudocount described in <a href="#http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2672635/"><em>Buslje et. al. 2009</em><span class="fa fa-external-link" aria-hidden="true"></span></a>.  </li>
+<li>BLOSUM62 based pseudo frequencies of residues pairs, similar to <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC146917/"><em>Altschul et. al. 1997</em><span class="fa fa-external-link" aria-hidden="true"></span></a>.  </li>
 </ol>
 
 </div>
@@ -501,11 +501,11 @@ The Information module has available two low-count corrections:</p>
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">MSA</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">MSA</span>
 
 <span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF09776/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
 
-<span class="n">filtercolumns</span><span class="o">!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">columngapfraction</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span> <span class="o">.&lt;</span> <span class="mf">0.5</span><span class="p">)</span> <span class="c"># delete columns with 50% gaps or more</span>
+<span class="n">filtercolumns!</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="n">columngapfraction</span><span class="p">(</span><span class="n">msa</span><span class="p">)</span> <span class="o">.&lt;</span> <span class="mf">0.5</span><span class="p">)</span> <span class="c"># delete columns with 50% gaps or more</span>
 </pre></div>
 
 </div>
@@ -554,7 +554,7 @@ The Information module has available two low-count corrections:</p>
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">column_i</span> <span class="o">=</span> <span class="n">msa</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">column_i</span> <span class="o">=</span> <span class="n">msa</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
 <span class="n">column_j</span> <span class="o">=</span> <span class="n">msa</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
 
@@ -605,9 +605,9 @@ The Information module has available two low-count corrections:</p>
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">Nij</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">ResidueCount</span><span class="p">{</span><span class="kt">Int</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">false</span><span class="p">})</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Nij</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">ResidueCount</span><span class="p">{</span><span class="kt">Int</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">false</span><span class="p">})</span>
 
-<span class="n">count</span><span class="o">!</span><span class="p">(</span><span class="n">Nij</span><span class="p">,</span> <span class="n">column_i</span><span class="p">,</span> <span class="n">column_j</span><span class="p">)</span>
+<span class="n">count!</span><span class="p">(</span><span class="n">Nij</span><span class="p">,</span> <span class="n">column_i</span><span class="p">,</span> <span class="n">column_j</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -657,7 +657,7 @@ The Information module has available two low-count corrections:</p>
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">apply_pseudocount</span><span class="o">!</span><span class="p">(</span><span class="n">Nij</span><span class="p">,</span> <span class="n">AdditiveSmoothing</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">apply_pseudocount!</span><span class="p">(</span><span class="n">Nij</span><span class="p">,</span> <span class="n">AdditiveSmoothing</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -707,7 +707,7 @@ The Information module has available two low-count corrections:</p>
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">count</span><span class="p">(</span><span class="n">AdditiveSmoothing</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">column_i</span><span class="p">,</span> <span class="n">column_j</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">count</span><span class="p">(</span><span class="n">AdditiveSmoothing</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">column_i</span><span class="p">,</span> <span class="n">column_j</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -757,7 +757,7 @@ $$G_{ab} = \sum_{cd}  p_{cd} \cdot BLOSUM62( a | c ) \cdot BLOSUM62( b | d )$$
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">Pij</span> <span class="o">=</span> <span class="n">probabilities</span><span class="p">(</span><span class="kt">Float64</span><span class="p">,</span> <span class="n">column_i</span><span class="p">,</span> <span class="n">column_j</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Pij</span> <span class="o">=</span> <span class="n">probabilities</span><span class="p">(</span><span class="kt">Float64</span><span class="p">,</span> <span class="n">column_i</span><span class="p">,</span> <span class="n">column_j</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -797,9 +797,9 @@ $$G_{ab} = \sum_{cd}  p_{cd} \cdot BLOSUM62( a | c ) \cdot BLOSUM62( b | d )$$
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">Gij</span> <span class="o">=</span> <span class="n">ResidueProbability</span><span class="p">{</span><span class="kt">Float64</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span><span class="n">false</span><span class="p">}()</span> <span class="c"># doesn&#39;t need to be initialized with zeros</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Gij</span> <span class="o">=</span> <span class="n">ResidueProbability</span><span class="p">{</span><span class="kt">Float64</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span><span class="n">false</span><span class="p">}()</span> <span class="c"># doesn&#39;t need to be initialized with zeros</span>
 
-<span class="n">blosum_pseudofrequencies</span><span class="o">!</span><span class="p">(</span><span class="n">Gij</span><span class="p">,</span> <span class="n">Pij</span><span class="p">)</span>
+<span class="n">blosum_pseudofrequencies!</span><span class="p">(</span><span class="n">Gij</span><span class="p">,</span> <span class="n">Pij</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -849,7 +849,7 @@ $$P_{ab} = \frac{\alpha \cdot p_{ab} + \beta \cdot G_{ab} }{\alpha + \beta}$$
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">apply_pseudofrequencies</span><span class="o">!</span><span class="p">(</span><span class="n">Pij</span><span class="p">,</span> <span class="n">Gij</span><span class="p">,</span> <span class="n">nsequences</span><span class="p">(</span><span class="n">msa</span><span class="p">),</span> <span class="mf">8.512</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">apply_pseudofrequencies!</span><span class="p">(</span><span class="n">Pij</span><span class="p">,</span> <span class="n">Gij</span><span class="p">,</span> <span class="n">nsequences</span><span class="p">(</span><span class="n">msa</span><span class="p">),</span> <span class="mf">8.512</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -899,7 +899,7 @@ $$P_{ab} = \frac{\alpha \cdot p_{ab} + \beta \cdot G_{ab} }{\alpha + \beta}$$
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">probabilities</span><span class="p">(</span><span class="kt">Float64</span><span class="p">,</span> <span class="n">nsequences</span><span class="p">(</span><span class="n">msa</span><span class="p">),</span> <span class="mf">8.512</span><span class="p">,</span> <span class="n">column_i</span><span class="p">,</span> <span class="n">column_j</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">probabilities</span><span class="p">(</span><span class="kt">Float64</span><span class="p">,</span> <span class="n">nsequences</span><span class="p">(</span><span class="n">msa</span><span class="p">),</span> <span class="mf">8.512</span><span class="p">,</span> <span class="n">column_i</span><span class="p">,</span> <span class="n">column_j</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -952,7 +952,7 @@ The <code>SequenceCluster</code> type of the <code>MSA</code> module stores the 
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">clusters</span> <span class="o">=</span> <span class="n">hobohmI</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="mi">62</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">clusters</span> <span class="o">=</span> <span class="n">hobohmI</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="mi">62</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -981,7 +981,7 @@ The <code>SequenceCluster</code> type of the <code>MSA</code> module stores the 
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">count</span><span class="p">(</span><span class="n">msa</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">msa</span><span class="p">[:,</span><span class="mi">2</span><span class="p">],</span> <span class="n">weight</span><span class="o">=</span><span class="n">clusters</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">count</span><span class="p">(</span><span class="n">msa</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">msa</span><span class="p">[:,</span><span class="mi">2</span><span class="p">],</span> <span class="n">weight</span><span class="o">=</span><span class="n">clusters</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1050,7 +1050,7 @@ The information measures based on logarithms have a <code>base</code> field to i
 <div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">Ni</span> <span class="o">=</span> <span class="n">count</span><span class="p">(</span><span class="n">res</span><span class="s">&quot;PPCDPPPPPKDKKKKDDGPP&quot;</span><span class="p">)</span> <span class="c"># Ni has the count table of residues in this low complexity sequence</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Ni</span> <span class="o">=</span> <span class="n">count</span><span class="p">(</span><span class="n">res</span><span class="s">&quot;PPCDPPPPPKDKKKKDDGPP&quot;</span><span class="p">)</span> <span class="c"># Ni has the count table of residues in this low complexity sequence</span>
 
 <span class="n">H</span> <span class="o">=</span> <span class="n">estimate</span><span class="p">(</span><span class="n">Entropy</span><span class="p">{</span><span class="kt">Float32</span><span class="p">}(),</span> <span class="n">Ni</span><span class="p">)</span> <span class="c"># returns the Shannon entropy in nats (base e)</span>
 
@@ -1081,7 +1081,7 @@ The information measures based on logarithms have a <code>base</code> field to i
 <div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">H</span> <span class="o">=</span> <span class="n">estimate</span><span class="p">(</span><span class="n">Entropy</span><span class="p">(</span><span class="mf">2.0</span><span class="p">),</span> <span class="n">Ni</span><span class="p">)</span> <span class="c"># returns the Shannon entropy in nats (base 2)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">H</span> <span class="o">=</span> <span class="n">estimate</span><span class="p">(</span><span class="n">Entropy</span><span class="p">(</span><span class="mf">2.0</span><span class="p">),</span> <span class="n">Ni</span><span class="p">)</span> <span class="c"># returns the Shannon entropy in nats (base 2)</span>
 
 <span class="n">dump</span><span class="p">(</span><span class="n">H</span><span class="p">)</span> <span class="c"># the result it&#39;s Float64 because Entropy took the type of its base (2.0) as type parameter</span>
 </pre></div>
@@ -1202,7 +1202,7 @@ The information measures based on logarithms have a <code>base</code> field to i
 <div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">MSA</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">MIToS</span><span class="o">.</span><span class="n">MSA</span>
 
 <span class="n">msa</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF09776/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
 
@@ -1265,7 +1265,7 @@ The information measures based on logarithms have a <code>base</code> field to i
 <div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">Hx</span> <span class="o">=</span> <span class="n">estimateincolumns</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">ResidueProbability</span><span class="p">{</span><span class="kt">Float64</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">false</span><span class="p">},</span> <span class="n">Entropy</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}())</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Hx</span> <span class="o">=</span> <span class="n">estimateincolumns</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">ResidueProbability</span><span class="p">{</span><span class="kt">Float64</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">false</span><span class="p">},</span> <span class="n">Entropy</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}())</span>
 </pre></div>
 
 </div>
@@ -1315,7 +1315,7 @@ The information measures based on logarithms have a <code>base</code> field to i
 <div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">Hxy</span> <span class="o">=</span> <span class="n">estimateincolumns</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">ResidueProbability</span><span class="p">{</span><span class="kt">Float64</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">false</span><span class="p">},</span> <span class="n">Entropy</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}())</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Hxy</span> <span class="o">=</span> <span class="n">estimateincolumns</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">ResidueProbability</span><span class="p">{</span><span class="kt">Float64</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">false</span><span class="p">},</span> <span class="n">Entropy</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}())</span>
 </pre></div>
 
 </div>
@@ -1365,7 +1365,7 @@ The information measures based on logarithms have a <code>base</code> field to i
 <div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">Time_Pab</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="mi">0</span><span class="p">:</span><span class="mi">100</span><span class="p">)</span> <span class="k">do</span> <span class="n">x</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Time_Pab</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="mi">0</span><span class="p">:</span><span class="mi">100</span><span class="p">)</span> <span class="k">do</span> <span class="n">x</span>
     
     <span class="n">time</span> <span class="o">=</span> <span class="p">@</span><span class="n">elapsed</span> <span class="n">estimateincolumns</span><span class="p">(</span><span class="n">msa</span><span class="p">,</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">ResidueProbability</span><span class="p">{</span><span class="kt">Float64</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">false</span><span class="p">},</span> <span class="n">Entropy</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}())</span>
     
@@ -1420,11 +1420,11 @@ The information measures based on logarithms have a <code>base</code> field to i
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>MIToS ships with two methods to easily calculate corrected mutual information.<br>
-The first is the algorithm described in  <a href="#http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2672635/"><em>Buslje et. al. 2009</em><span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a>. This algorithm can be accessed through the <code>buslje09</code> function and includes:</p>
+The first is the algorithm described in  <a href="#http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2672635/"><em>Buslje et. al. 2009</em><span class="fa fa-external-link" aria-hidden="true"></span></a>. This algorithm can be accessed through the <code>buslje09</code> function and includes:</p>
 <ol>
 <li>Low count correction using <code>AdditiveSmoothing</code></li>
 <li>Sequence weighting after a <code>hobohmI</code> clustering</li>
-<li>Average Product Correction (APC) proposed by <a href="#http://bioinformatics.oxfordjournals.org/content/24/3/333">Dunn et. al. 2008<span class="fa fa-external-link" aria-hidden="true">&lt;/span&gt;</a>, through the <code>APC!</code> function that takes a MI matrix.  </li>
+<li>Average Product Correction (APC) proposed by <a href="#http://bioinformatics.oxfordjournals.org/content/24/3/333">Dunn et. al. 2008<span class="fa fa-external-link" aria-hidden="true"></span></a>, through the <code>APC!</code> function that takes a MI matrix.  </li>
 <li>Z score correction using the functions <code>shuffle_residues_sequencewise</code>from the MSA module and <code>zscore</code> from the <code>PairwiseListMatrices</code> package.</li>
 </ol>
 
@@ -1436,7 +1436,7 @@ The first is the algorithm described in  <a href="#http://www.ncbi.nlm.nih.gov/p
 <div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="o">?</span><span class="n">buslje09</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="o">?</span><span class="n">buslje09</span>
 </pre></div>
 
 </div>
@@ -1513,7 +1513,7 @@ The first is the algorithm described in  <a href="#http://www.ncbi.nlm.nih.gov/p
 <div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="o">?</span><span class="n">MIToS</span><span class="o">.</span><span class="n">Information</span><span class="o">.</span><span class="n">BLMI</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="o">?</span><span class="n">MIToS</span><span class="o">.</span><span class="n">Information</span><span class="o">.</span><span class="n">BLMI</span>
 </pre></div>
 
 </div>
@@ -1565,7 +1565,7 @@ The first is the algorithm described in  <a href="#http://www.ncbi.nlm.nih.gov/p
 <div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">ZMIp</span><span class="p">,</span> <span class="n">MIp</span>  <span class="o">=</span> <span class="n">buslje09</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF09776/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">ZMIp</span><span class="p">,</span> <span class="n">MIp</span>  <span class="o">=</span> <span class="n">buslje09</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF09776/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1628,7 +1628,7 @@ The first is the algorithm described in  <a href="#http://www.ncbi.nlm.nih.gov/p
 <div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">ZBLMIp</span><span class="p">,</span> <span class="n">BLMIp</span>  <span class="o">=</span> <span class="n">BLMI</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF09776/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">ZBLMIp</span><span class="p">,</span> <span class="n">BLMIp</span>  <span class="o">=</span> <span class="n">BLMI</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF09776/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1712,7 +1712,7 @@ The <code>heatmap</code> is the simplest way to visualize the values of the Mutu
 <div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">ZMIp</span><span class="p">,</span> <span class="n">MIp</span>  <span class="o">=</span> <span class="n">buslje09</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF00041/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span> <span class="n">samples</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">ZMIp</span><span class="p">,</span> <span class="n">MIp</span>  <span class="o">=</span> <span class="n">buslje09</span><span class="p">(</span><span class="s">&quot;http://pfam.xfam.org/family/PF00041/alignment/full&quot;</span><span class="p">,</span> <span class="n">Stockholm</span><span class="p">,</span> <span class="n">samples</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
 
 <span class="c"># Pkg.add(&quot;GR&quot;) to install GR</span>
 <span class="n">gr</span><span class="p">()</span>
@@ -21586,7 +21586,7 @@ rkJggg==
 <div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">threshold</span> <span class="o">=</span> <span class="n">quantile</span><span class="p">(</span><span class="n">ZMIp</span><span class="o">.</span><span class="n">list</span><span class="p">,</span> <span class="mf">0.99</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">threshold</span> <span class="o">=</span> <span class="n">quantile</span><span class="p">(</span><span class="n">ZMIp</span><span class="o">.</span><span class="n">list</span><span class="p">,</span> <span class="mf">0.99</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -21615,7 +21615,7 @@ rkJggg==
 <div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">ZMIp</span><span class="p">[</span> <span class="n">ZMIp</span> <span class="o">.&lt;</span> <span class="n">threshold</span> <span class="p">]</span> <span class="o">=</span> <span class="n">NaN</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">ZMIp</span><span class="p">[</span> <span class="n">ZMIp</span> <span class="o">.&lt;</span> <span class="n">threshold</span> <span class="p">]</span> <span class="o">=</span> <span class="n">NaN</span>
 <span class="n">ZMIp</span>
 </pre></div>
 
@@ -21666,7 +21666,7 @@ rkJggg==
 <div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">nrow</span><span class="p">,</span> <span class="n">ncol</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">ZMIp</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">nrow</span><span class="p">,</span> <span class="n">ncol</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">ZMIp</span><span class="p">)</span>
 
 <span class="n">cMI</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="n">ncol</span><span class="p">)</span> <span class="k">do</span> <span class="n">i</span>
     <span class="n">col</span> <span class="o">=</span> <span class="n">ZMIp</span><span class="p">[:,</span><span class="n">i</span><span class="p">]</span>
@@ -21721,7 +21721,7 @@ rkJggg==
 <div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="c"># Pkg.add(&quot;PlotRecipes&quot;) # to install it</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># Pkg.add(&quot;PlotRecipes&quot;) # to install it</span>
 
 <span class="k">using</span> <span class="n">PlotRecipes</span>
 
@@ -22098,7 +22098,7 @@ rkJggg==
 <div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span class="n">chorddiagram</span><span class="p">(</span><span class="n">ZMIp</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">600</span><span class="p">,</span><span class="mi">600</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="p">:</span><span class="n">orange</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">chorddiagram</span><span class="p">(</span><span class="n">ZMIp</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">600</span><span class="p">,</span><span class="mi">600</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="p">:</span><span class="n">orange</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
 
 </div>
